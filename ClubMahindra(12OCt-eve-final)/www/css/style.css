@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+.icon-square{
+    padding: 8px;
+    background-color: #90340B;
+    color: #fff;
+}
+
+.homeimg{
+    background-image: url('../img/home.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.tabs-striped .tabs{
+background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+}
+
+.tabs-striped .tabs .tab-item{
+    color:white;
+}
+
+.tabs-striped.tabs-color-assertive .tab-item.tab-item-active, .tabs-striped.tabs-color-assertive .tab-item.active, .tabs-striped.tabs-color-assertive .tab-item.activated {
+    color: #B7B0B0;
+    border: 0 solid #000;
+}
+
+.bar-positive {
+    z-index: 2;
+}
+
+.bar-subheader {
+    z-index: 1;
+    transition: top 0.25s ease;
+}
+
+.has-subheader {
+    top: 44px;
+    .scroll {
+        padding-top: 44px;
+    }
+}
+
+body.bar-subheader-slide-away {
+    .bar-subheader {
+        top: 0;
+    }
+    .has-subheader {
+        top: 44px;
+    }
+}
