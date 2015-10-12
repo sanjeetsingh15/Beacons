@@ -269,14 +269,14 @@ angular.module('starter.services', [])
 		  
             var myBeaAdd = angular.element( document.querySelector( '#beaconMsg' ) );
             
-            var element = '<div><p style="float:left;padding: 10px;background-color:red;width: 100%;"><span style="color:#fff;font-size: 20px;font-weight: 900;">Welcome Kapil</span><i style="color: white;font-size: 24px; /* padding: 5px 10px 5px 10px; */ position:absolute;/* float: right; *//* width: 100%; *//* margin-right: -6px; */right: 10px;" class="icon ion-close-circled right" onclick="closeBanner()"></i></p><a onclick="mycart()"><img style="height:550px;width:100%;" src="img/map.png"></a></div>';
+            var element = '<div style="height:570px; width:100%;"><p style="float:left;padding: 10px;background-color:red;width: 100%;"><span style="color:#fff;font-size: 20px;font-weight: 900;">Welcome Kapil</span><i style="color: white;font-size: 24px; /* padding: 5px 10px 5px 10px; */ position:absolute;/* float: right; *//* width: 100%; *//* margin-right: -6px; */right: 10px;" class="icon ion-close-circled right" onclick="closeBanner()"></i></p><a onclick="mycart()"><div class="list card" style="width:100%;"> <div class="item"> <h2>Our Ext. Details</h2> <p>Reception: 1234</p> <p>Laundry: 1235</p> <p>Room Service: 1236</p> <p>Management: 1237</p> </div> <div class="item">  <h2>Our Password</h2> <p>Your Locker Password: 1234</p> <p>Wifi Password: 1235</p> </div> <div style="width:100%; height:50px;"></div><a style="width:100%"; href="#/app/map" class="button button-full button-balanced">Point of interests Show on map</a></div></a></div>';
             
             if(mAppInBackground == true && mNotificationId2 != 2){ //LocalNotificaiton(199,myBeaNoti2); LocalNotificaiton(1999,mNotificationId2);
                //cordova.plugins.notification.local.clearAll(function() { }, this);
                 cordova.plugins.notification.local.schedule({
                     id: 3,
                     title: "Club Mahindra",
-                    text: "Our Food Service Ext. is 1024 And Wifi Password is 12345. Tab to see hotel map.",
+                    text: "Tap to see Hotel's Ext. passwords, and points of interests.",
                     data: { beaconid:mNearestBeacon.uuid }
                 });
                 
